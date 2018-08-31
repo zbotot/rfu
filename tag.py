@@ -1,4 +1,4 @@
-from GENERATOR import *
+from linepy import *
 from datetime import datetime
 from time import sleep
 from bs4 import BeautifulSoup
@@ -10,25 +10,25 @@ import time, random, asyncio, timeit, sys, json, codecs, threading, glob, re, st
 
 print ("\n\n ---  WELCOME TO RFU SEKAWAN  ---\n")
 
-cl = RIDEN()
+cl = RIDEN("EwuIxf6kuWbhzybkUpK7.rYQ2taYWmIaHwZoX6iKQ1W.3Pc6bHGn/Qud55OJmJS5Ak4yUSq5JkC5ZreiMPP5nPs=")
 #cl = RIDEN(authTokenRFU="YOUR TOKEN")
 cl.log("YOUR TOKEN : {}".format(str(cl.authToken)))
 channel = RIDENChannel(cl,cl.server.CHANNEL_ID['LINE_TIMELINE'])
 cl.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
-riden1 = RIDEN()
+riden1 = RIDEN("EwFGCK9olCPcJDOuYPi6.BaiKNxR2VN7zWCBrQS6P5G.S2MyIxTFy1+pMWyfCcXXDUvxCNx8jCxTgL95z9GnqKw=")
 #riden1 = RIDEN(authTokenRFU="YOUR TOKEN")
 riden1.log("YOUR TOKEN : {}".format(str(riden1.authToken)))
 channel = RIDENChannel(riden1,riden1.server.CHANNEL_ID['LINE_TIMELINE'])
 riden1.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
-riden2 = RIDEN()
+riden2 = RIDEN("EwR7ZwNp8RxrAmF6uv9a.UHbbg4pHBjT5VwCYtXmXsG.2+sNYjwoT6N+64cIxcUG4Gykcje9UDBtIsMWqu4MTK8=")
 #riden2 = RIDEN(authTokenRFU="YOUR TOKEN")
 riden2.log("YOUR TOKEN : {}".format(str(riden2.authToken)))
 channel = RIDENChannel(riden2,riden2.server.CHANNEL_ID['LINE_TIMELINE'])
 riden2.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
-riden3 = RIDEN()
+riden3 = RIDEN("EwT5ekZ0wCCLSvrRN8pa.Oyj1ZAWaMt3CKaVDd5BW2G.RvQnctVgH2UVfJTVh9Kr+TEWfvpOrV+w8Cm+IL1Bm+o=")
 #riden3 = RIDEN(authTokenRFU="YOUR TOKEN")
 riden3.log("YOUR TOKEN : {}".format(str(riden3.authToken)))
 channel = RIDENChannel(riden3,riden3.server.CHANNEL_ID['LINE_TIMELINE'])
@@ -46,7 +46,7 @@ JSMID1 = riden1.profile.mid
 JSMID2 = riden2.profile.mid
 JSMID3 = riden3.profile.mid
 RfuBot=[mid,JSMID1,JSMID2,JSMID3]
-Owner=["uc721ad1f11fb7e128453ba5a27424998","u2fd9d66d7006f6dac03dc94950fa83c8"]
+Owner=["u9f09cfcb17d037e2936b751bd9d40ead"]
 RfuSekawan = RfuBot + Rfu + Owner
 
 contact = cl.getProfile()
@@ -99,8 +99,8 @@ Squad = {
     "Unban":False,
     "AddMention":True,
     "Admin": {
-        "uc721ad1f11fb7e128453ba5a27424998":True,  #TARO MID ADMIN NYA DISINI
-        "u2fd9d66d7006f6dac03dc94950fa83c8":True
+        "u9f09cfcb17d037e2936b751bd9d40ead":True,  #TARO MID ADMIN NYA DISINI
+        "u9f09cfcb17d037e2936b751bd9d40ead":True
     },
 }
 
