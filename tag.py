@@ -1,12 +1,14 @@
-from LINEPY import *
+# -*- coding: utf-8 -*-
+from linepy import *
+from akad.ttypes import *
+from multiprocessing import Pool, Process
 from datetime import datetime
 from time import sleep
 from bs4 import BeautifulSoup
+from humanfriendly import format_timespan, format_size, format_number, format_length
+import time, random, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, ast, pytz, urllib.request, urllib.parse, urllib.error, urllib.parse,antolib,subprocess,unicodedata,GACSender
 from gtts import gTTS
 from googletrans import Translator
-from multiprocessing import Pool, Process
-from ffmpy import FFmpeg
-import time, random, asyncio, timeit, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, urllib, urllib.parse, ast, pytz, wikipedia, pafy, youtube_dl, atexit
 
 print ("\n\n ---  WELCOME TO RFU SEKAWAN  ---\n")
 
